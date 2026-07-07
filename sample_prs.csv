@@ -1,0 +1,47 @@
+pr_id,title,agent,state,created_at,closed_at,merged_at,repo_name,repo_stars,filename,patch
+1001,"Fix login bug",Claude_Code,merged,2025-03-15 09:00,2025-03-15 11:00,2025-03-15 11:00,myapp/backend,1250,auth.py,"+ import requests
++ import json
++ def login(user):
++     response = requests.post(url)
++     return response.json()"
+1002,"Add data analysis",Devin,merged,2025-04-10 10:00,2025-04-10 14:00,2025-04-10 14:00,data/pipeline,890,analysis.py,"+ import numpy as np
++ import pandas as pd
++ result = np.mean(data)"
+1003,"Add data analysis deps",Devin,merged,2025-04-10 10:00,2025-04-10 14:00,2025-04-10 14:00,data/pipeline,890,requirements.txt,"+ numpy==1.26.4
++ pandas==2.2.2"
+1004,"Update homepage UI",OpenAI_Codex,merged,2025-05-20 08:00,2025-05-20 08:20,2025-05-20 08:20,frontend/web,2100,index.tsx,"+ import React from 'react'
++ import { useState } from 'react'
++ const App = () => <div>Hello</div>"
+1005,"Fix payment error",GitHub_Copilot,closed,2025-03-01 09:00,2025-03-05 17:00,,payments/core,3400,payment.py,"+ import stripe
++ def process():
++     stripe.charge(amount)"
+1006,"Fix payment deps",GitHub_Copilot,closed,2025-03-01 09:00,2025-03-05 17:00,,payments/core,3400,requirements.txt,"+ stripe
++ requests"
+1007,"Add user tests",OpenAI_Codex,merged,2025-05-21 09:00,2025-05-21 09:18,2025-05-21 09:18,frontend/web,2100,test_user.py,"+ import pytest
++ import unittest
++ def test_login():
++     assert login('user') == True"
+1008,"Add test deps",OpenAI_Codex,merged,2025-05-21 09:00,2025-05-21 09:18,2025-05-21 09:18,frontend/web,2100,requirements.txt,"+ pytest==7.4.0
++ coverage==7.3.0"
+1009,"Refactor database",Cursor,merged,2025-04-15 11:00,2025-04-15 13:24,2025-04-15 13:24,db/service,650,database.py,"+ import sqlalchemy
++ from sqlalchemy import create_engine
++ engine = create_engine(url)"
+1010,"Fix CSS layout",Claude_Code,closed,2025-03-20 10:00,2025-03-20 11:48,,frontend/web,2100,styles.css,"+ .container {
++     display: flex;
++     margin: 0 auto;
++ }"
+1011,"Add logging",Devin,merged,2025-04-20 09:00,2025-04-20 11:00,2025-04-20 11:00,data/pipeline,890,logger.py,"+ import logging
++ import os
++ logging.basicConfig(level=logging.INFO)"
+1012,"Add ML model",OpenAI_Codex,merged,2025-05-22 10:00,2025-05-22 10:15,2025-05-22 10:15,ml/models,1800,model.py,"+ import torch
++ import numpy as np
++ model = torch.nn.Linear(10, 1)"
+1013,"Add ML deps",OpenAI_Codex,merged,2025-05-22 10:00,2025-05-22 10:15,2025-05-22 10:15,ml/models,1800,requirements.txt,"+ torch==2.1.0
++ torchvision"
+1014,"Update docs",Claude_Code,merged,2025-03-25 09:00,2025-03-25 10:00,2025-03-25 10:00,myapp/backend,1250,README.md,"+ # API Documentation
++ ## Endpoints
++ POST /login - authenticate user"
+1015,"Fix null error",GitHub_Copilot,merged,2025-03-10 09:00,2025-03-11 02:12,2025-03-11 02:12,payments/core,3400,utils.py,"+ import os
++ import sys
++ def safe_get(d, key):
++     return d.get(key, None)"
