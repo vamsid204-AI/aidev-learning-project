@@ -1,0 +1,31 @@
+# Analysis Scripts
+
+This folder contains Python scripts that analyse
+the AIDev dataset sample data.
+
+## Scripts in Order
+
+### 01_load_data.py
+Loads the sample_prs.csv dataset and explains
+every column. Shows what AIDev dataset looks like.
+
+### 02_acceptance_rate.py
+Calculates which agents get their PRs accepted.
+Connects to Finding #2 from the AIDev paper.
+
+### 03_library_check.py
+Scans the patch column for import statements.
+This is exactly what pr_commit_details analysis does.
+Produces the 29.5% library import rate.
+
+### 04_version_check.py
+Checks requirements.txt changes for version numbers.
+Produces the 1.3% and 75.0% findings.
+
+## How to Run
+```bash
+python analysis/01_load_data.py
+python analysis/02_acceptance_rate.py
+python analysis/03_library_check.py
+python analysis/04_version_check.py
+```
